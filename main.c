@@ -89,7 +89,7 @@ read_file(char* file)
 {
 	char temp;
 	char* w = com;
-	fopen_s(&fp, file, "r");
+	fp = fopen(file, "r");
 	do {
 		temp = fgetc(fp);
 		switch (temp) {
